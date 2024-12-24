@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400..800&family=Dosis&display=swap" rel="stylesheet">
+    <title>ChatWell - Your Mental Health Companion</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="chatbot-container">
+        <div class="header">
+            <img src="static/logo.jpg" alt="ChatWell Logo" class="logo">
+            <h1>ChatWell</h1>
+            <p>Your mental health companion</p>
+        </div>
+        <div id="chatbox" class="chatbox">
+            <div class="message bot-message">
+                <img src="static/logo.jpg" alt="Bot Icon" class="speaker-icon">
+                <div class="text">Hello! How can I assist you today?</div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input id="userInput" type="text" placeholder="Type your message here..." autofocus>
+            <button id="sendBtn"><span>➤</span></button>
+        </div>
+    </div>
+    <script>
+        const userInput = document.getElementById("userInput");
+        const sendBtn = document.getElementById("sendBtn");
+        const chatbox = document.getElementById("chatbox");
+
+        function appendMessage(sender, message) {
+            const messageDiv = document.createElement("div");
+            messageDiv.className = sender === "bot" ? "message bot-message" : "message user-message";
+
+            const icon = document.createElement("img");
+            icon.className = "speaker-icon";
+            icon.src = sender === "bot" ? "static/logo.jpg" : "static/user.jpg";
+
+            const textDiv = document.createElement("div");
+            textDiv.className = "text";
+            textDiv.textContent = message;
+
+            messageDiv.appendChild(icon);
+            messageDiv.appendChild(textDiv);
+            chatbox.appendChild(messageDiv);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        sendBtn.addEventListener("click", async () => {
+            const userMessage = userInput.value.trim();
+            if (!userMessage) return;
+
+            // Append user message to the chat
+            appendMessage("user", userMessage);
+
+            // Send the message to the server
+            const response = await fetch("/get", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: userMessage })
+            });
+
+            const data = await response.json();
+            appendMessage("bot", data.response);
+            userInput.value = "";
+        });
+
+        userInput.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") sendBtn.click();
+        });
+    </script>
+</body>
+</html>

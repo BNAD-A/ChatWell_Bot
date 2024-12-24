@@ -1,0 +1,223 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "How are you?", "Hey", "Greetings", "Hi, how are you doing?", "Hello there", "Good evening", "Good morning", "Yo", "Hi, how's it going?", "What's up?", "Howdy!"],
+        "responses": ["Hello! How can I assist you today?", "Hi! What\u2019s on your mind?", "Hello! How can I help you today?", "Good evening! How can I assist you?", "Hi there! I\u2019m here to listen."]
+      },
+      {
+        "tag": "anxiety",
+        "patterns": ["I feel anxious", "I am stressed", "I have anxiety", "I can't relax", "I am nervous", "My stress is unmanageable", "I feel overwhelmed", "I am on edge", "My mind feels cluttered", "I can't control my stress", "I am overwhelmed", "I feel like I can't handle things"],
+        "responses": [
+          "I\u2019m sorry to hear that. Can you tell me more about what\u2019s bothering you?",
+          "Let\u2019s take a deep breath together. Tell me what\u2019s going on.",
+          "That sounds tough. I\u2019m here to help.",
+          "Try focusing on slow, deep breathing. What\u2019s causing you this stress?",
+          "I\u2019m here for you. Share with me what\u2019s on your mind."
+        ]
+      },
+      {
+        "tag": "depression",
+        "patterns": ["I feel sad", "I am depressed", "I feel down", "I have no energy", "I feel lonely", "Life is hard", "I can't move forward", "I feel hopeless", "I am feeling empty", "Nothing interests me", "I feel like giving up"],
+        "responses": [
+          "I\u2019m here to listen. What\u2019s making you feel this way?",
+          "It\u2019s good to share how you feel. Let\u2019s keep talking.",
+          "Sometimes talking can help. What\u2019s weighing on your mind?",
+          "I\u2019m sorry you\u2019re feeling this way. Can you tell me what\u2019s happening?",
+          "Let\u2019s take things one step at a time. You\u2019re not alone."
+        ]
+      },
+      {
+        "tag": "encouragement",
+        "patterns": ["I am not okay", "I feel lost", "Help me", "I can't move forward", "I doubt myself", "Everything feels too hard", "I have no motivation", "I don\u2019t know what to do", "I feel stuck", "I am mentally exhausted", "I need strength", "I need some encouragement"],
+        "responses": [
+          "You are not alone in this. Share your thoughts with me.",
+          "There\u2019s always hope, and I\u2019m here to help you.",
+          "Let\u2019s take it one step at a time. You can do this.",
+          "You are capable of overcoming this. Believe in yourself.",
+          "I believe in your ability to move forward. Let\u2019s talk about what\u2019s on your mind."
+        ]
+      },
+      {
+        "tag": "stress_management",
+        "patterns": ["How to manage stress?", "Tips to calm down?", "Do you have relaxation techniques?", "I feel tense", "I am overwhelmed", "My stress is constant", "I can't calm down", "I feel immense pressure", "I am too tense to think clearly", "How to unwind?", "What are some stress management tips?"],
+        "responses": [
+          "Try breathing slowly and deeply. It can help calm your mind.",
+          "A walk or a short break might make a difference. Tell me what\u2019s stressing you out.",
+          "Meditation or simple exercises can be very helpful. Would you like to learn more?",
+          "Sometimes listening to music or talking to someone can help. Would you like to try?",
+          "Take a moment to disconnect and focus on an activity you enjoy. It might help."
+        ]
+      },
+      {
+        "tag": "positivity",
+        "patterns": ["I want to be more positive", "How to stay optimistic?", "How to keep my spirits up?", "Any positive advice?", "I want to find joy", "I want to be happier", "How to overcome negative thoughts?", "I want to feel grateful", "How to cultivate gratitude?", "I want to smile again", "How to think positively?"],
+        "responses": [
+          "Thinking about what you\u2019re grateful for can be a great start.",
+          "Surround yourself with things and people that bring you joy.",
+          "Every small step counts. Find one positive thing today.",
+          "Try noting down one positive thing each day. It can shift your perspective.",
+          "Look around and identify something that makes you smile. It can brighten your day."
+        ]
+      },
+      {
+        "tag": "self_care",
+        "patterns": ["How to take care of myself?", "Any tips for mental health care?", "I want to improve my well-being", "How to meditate?", "What are the best self-care tips?", "What can I do to relax?", "How to develop healthy habits?", "Ways to soothe my mind?", "How to practice self-care?"],
+        "responses": [
+          "Take some time for yourself each day, even if it\u2019s just a few minutes.",
+          "Engage in activities that bring you joy, like reading, drawing, or walking.",
+          "Get enough sleep, eat healthily, and stay hydrated. Your body and mind are connected.",
+          "Meditation, journaling, and regular breaks can make a big difference.",
+          "Learn to say no when you need to. Your well-being comes first."
+        ]
+      },
+      {
+        "tag": "sleep_issues",
+        "patterns": ["I can\u2019t sleep", "I have sleep problems", "How to improve my sleep?", "I wake up often at night", "I am tired but can\u2019t sleep", "What can I do for better sleep?"],
+        "responses": [
+          "Try setting a regular sleep routine.",
+          "Avoid screens at least an hour before sleeping.",
+          "A quiet and dark environment can help you sleep better.",
+          "Practice relaxation exercises before bed, like deep breathing."
+        ]
+      },
+      {
+        "tag": "time_management",
+        "patterns": ["How to manage my time?", "I feel overwhelmed by my tasks", "How to be more productive?", "I have too much to do and not enough time", "Tips for organizing my day?", "How to balance my time effectively?"],
+        "responses": [
+          "List your priorities and focus on one task at a time.",
+          "Use a planner or app to schedule your day.",
+          "Don\u2019t forget to take breaks to recharge your energy.",
+          "Learn to delegate tasks if possible."
+        ]
+      },
+      {
+        "tag": "gratitude",
+        "patterns": ["How to practice gratitude?", "Why is gratitude important?", "How to be thankful?", "Exercises for gratitude?", "I want to feel more grateful in my life", "Ways to express gratitude?"],
+        "responses": [
+          "Keep a gratitude journal and note three things you\u2019re thankful for each day.",
+          "Take a moment to reflect on the good things that have happened recently.",
+          "Express your gratitude to someone you appreciate.",
+          "Practice mindfulness to focus on the present and what you have."
+        ]
+      },
+      {
+        "tag": "relationships",
+        "patterns": ["How to improve my relationships?", "I have conflicts with friends", "How to connect better with others?", "I feel lonely in my relationships", "How to build trust?", "How to maintain healthy relationships?"],
+        "responses": [
+          "Open communication is key. Share your thoughts and feelings honestly.",
+          "Try to listen actively and empathize with others\u2019 perspectives.",
+          "Spend quality time together to strengthen your bonds.",
+          "Building trust takes time. Be consistent and reliable."
+        ]
+      },
+      {
+        "tag": "mindfulness",
+        "patterns": ["What is mindfulness?", "How can I practice mindfulness?", "I want to be more present", "How to reduce overthinking?", "Techniques for mindfulness?", "How to focus on the present?"],
+        "responses": [
+          "Mindfulness is about focusing on the present moment without judgment.",
+          "You can start by practicing deep breathing and paying attention to your senses.",
+          "Mindfulness meditation is a great way to cultivate awareness.",
+          "Try to observe your thoughts and feelings without reacting to them."
+        ]
+      },
+      {
+        "tag": "anger_management",
+        "patterns": ["How to manage my anger?", "I feel easily irritated", "I can\u2019t control my temper", "Tips for calming down when angry", "How to handle frustration?", "Ways to channel anger constructively?"],
+        "responses": [
+          "Take a moment to step away and breathe deeply.",
+          "Try to identify the source of your anger and address it calmly.",
+          "Physical activities like exercise can help release tension.",
+          "Practicing patience and understanding can make a difference."
+        ]
+      },
+      {
+        "tag": "motivation",
+        "patterns": ["How to stay motivated?", "I lack motivation", "Tips for boosting motivation?", "How to find inspiration?", "I feel like procrastinating"],
+        "responses": [
+          "Break your tasks into smaller, manageable steps.",
+          "Remind yourself why you started and focus on your goals.",
+          "Reward yourself for completing tasks, no matter how small.",
+          "Sometimes taking a short break can reignite your motivation."
+        ]
+      },
+      {
+        "tag": "emotional_wellbeing",
+        "patterns": ["How to improve my emotional wellbeing?", "I feel emotionally drained", "Tips for emotional health", "How to process my emotions?", "I want to feel emotionally stronger"],
+        "responses": [
+          "Allow yourself to feel your emotions without judgment.",
+          "Take time to reflect on what you\u2019re feeling and why.",
+          "Engage in activities that bring you joy and relaxation.",
+          "Talking to someone you trust can help process your emotions.",
+          "Focus on self-compassion and being kind to yourself."
+        ]
+      },
+      {
+        "tag": "work_life_balance",
+        "patterns": ["How to balance work and personal life?", "I feel like work is taking over my life", "Tips for work-life balance", "How to set boundaries between work and home?", "I struggle to find time for myself due to work"],
+        "responses": [
+          "Set clear boundaries for work and personal time.",
+          "Make time for activities you enjoy outside of work.",
+          "Prioritize self-care to recharge and stay balanced.",
+          "Communicate your limits to colleagues and family members.",
+          "Take regular breaks to avoid burnout."
+        ]
+      },
+      {
+        "tag": "coping_strategies",
+        "patterns": ["What are some good coping strategies?", "I need help managing tough situations", "How to cope with stress effectively?", "Techniques for dealing with challenges", "I\u2019m struggling to handle difficulties"],
+        "responses": [
+          "Break down challenges into smaller, manageable tasks.",
+          "Focus on what you can control and let go of what you can\u2019t.",
+          "Talk to someone you trust about your struggles.",
+          "Engage in activities that help you relax, like yoga or journaling.",
+          "Practice gratitude to shift your focus to positive aspects of life."
+        ]
+      },
+      {
+        "tag": "social_anxiety",
+        "patterns": ["I feel anxious in social situations", "How to overcome social anxiety?", "I\u2019m nervous about meeting new people", "Tips for social confidence", "I avoid social interactions because of anxiety"],
+        "responses": [
+          "Start by taking small steps to expose yourself to social situations.",
+          "Practice deep breathing to calm your nerves before interactions.",
+          "Focus on the present moment instead of worrying about judgments.",
+          "Remember that it\u2019s okay to take breaks if you feel overwhelmed.",
+          "Challenge negative thoughts about social situations and replace them with positive ones."
+        ]
+      },
+      {
+        "tag": "self_acceptance",
+        "patterns": ["How to accept myself?", "I struggle with self-acceptance", "Tips for building self-worth", "I feel like I\u2019m not good enough", "How to stop comparing myself to others?"],
+        "responses": [
+          "Recognize your unique strengths and qualities.",
+          "Remind yourself that everyone has flaws and that\u2019s okay.",
+          "Practice affirmations to build a positive self-image.",
+          "Limit time spent on activities that make you compare yourself to others, like social media.",
+          "Focus on progress, not perfection, and celebrate small victories."
+        ]
+      },
+      {
+        "tag": "thank_you",
+        "patterns": ["Thanks", "I appreciate it", "Thanks a lot", "Many thanks"],
+        "responses": [
+          "You\u2019re welcome! I\u2019m glad I could help.",
+          "No problem! Let me know if you need anything else.",
+          "Happy to help! Is there anything else on your mind?",
+          "You\u2019re welcome! Take care of yourself.",
+          "You\u2019re welcome! I\u2019m glad I could help."
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "Bye", "See you later", "Talk to you soon", "Take care", "Catch you later"],
+        "responses": [
+          "Goodbye! Take care and feel free to reach out anytime.",
+          "Bye! Have a great day ahead.",
+          "See you later! Remember, I\u2019m here if you need me.",
+          "Take care! Wishing you all the best."
+        ]
+      }
+    ]
+}
+      
+      
